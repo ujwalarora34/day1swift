@@ -30,8 +30,68 @@ var div = a/b
 var mod = a%b
 print("addition is : \(sum)")
 print("subtraction is : \(sub)")
-print("multiplication is :,\(mul)")
+print("multiplication is : \(mul)")
 print("division is : \(div)")
 print("Mod is : \(mod)")
 
 print("ujwal arora")
+
+
+var str = "welcome to lambton college at toronto campus"
+
+//length of string
+if !str.isEmpty
+{
+    print(str)
+    
+    let s = str
+    str = str.lowercased()
+    
+    print(str, s)
+}
+
+let len = str.count
+
+print("length of string : \(len)")
+
+let c : Character
+
+c = "H"
+print(c)
+str.append("???")
+for i in str
+{
+    print(i, separator: "", terminator: "")
+    //print(<#T##items: Any...##Any#>, separator: <#T##String#>, terminator: <#T##String#>)
+}
+
+print("string indices")
+for index in str.indices
+{
+    print(str[index], separator: " ", terminator: " ")
+}
+
+print(str)
+
+print("------- Range -------")
+let index = str.firstIndex(of: " ") ?? str.endIndex
+let newstr = str[..<index]
+print(newstr)
+for i in newstr
+{
+    print(i)
+}
+
+
+//revers of string
+
+
+//split into words
+
+let dollarSign = "\u{24}"        // $,  Unicode scalar U+0024
+let blackHeart = "\u{2665}"      // ♥,  Unicode scalar U+2665
+let sparklingHeart = "\u{1F496}" // 💖, Unicode scalar U+1F496
+
+print(dollarSign, blackHeart, sparklingHeart, separator: " ")
+
+
